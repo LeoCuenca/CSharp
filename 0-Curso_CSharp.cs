@@ -72,7 +72,7 @@ switch (opcion)
         alcanceVariables quinto = new alcanceVariables();
         quinto.primer();
         quinto.segunda();
-        quinto.tercera();
+        quinto.tercera();hhh
         break;
 
     case 6:
