@@ -41,6 +41,7 @@ public class punto
     }
 
     //Este metodo es static para poder invocarlo directamente desde la clase propiamente dicha, en lugar que desde un objeto de clase.
+    //¿Podrian los getters/setters declararse SIEMPRE como static?
     public static int getContador() => contadorObjetos;
 
 }
