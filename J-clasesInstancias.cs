@@ -6,5 +6,6 @@ public class clasesInstancias
 
     //Metodo de clase
     public double CalculoArea(int radio) => pi * radio * radio;
+    
 
 }

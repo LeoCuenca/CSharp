@@ -10,6 +10,7 @@ public class metodos
     public void sumaNumeros(int num1, int num2)
     {
         Console.WriteLine($"        La suma es : {num1+num2}");
+
     }
 
     public int multiplicacionNumeros(int num1, int num2)

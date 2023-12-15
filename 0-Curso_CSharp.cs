@@ -4,13 +4,12 @@ internal class Curso_C
 {
     static void Main(string[] args)
     {
-        int opcion;
+
         Console.SetWindowSize(200, 50);
         Console.WriteLine("     ");
         Console.WriteLine("     MENU DE OPCIONES DEL CURSO DE C#");
         Console.WriteLine("     --------------------------------");
         Console.WriteLine("     ");
-
         Console.WriteLine("\t1. Impresion de Strings");
         Console.WriteLine("\t2. Manejo de Variables");
         Console.WriteLine("\t3. Conversion de Texto a Numero");
@@ -24,21 +23,24 @@ internal class Curso_C
         Console.WriteLine("\t11. Encapsulamiento / Ambito");
         Console.WriteLine("\t12. Setters y Getters");
         Console.WriteLine("\t13. Variable Static / Metodo Static");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
-        //Console.WriteLine("\t");
+        Console.WriteLine("\t14. Clases Anonimas");
+        Console.WriteLine("\t15. Arrays");
+        Console.WriteLine("\t16. ");
+        Console.WriteLine("\t17. ");
+        Console.WriteLine("\t18. ");
+        Console.WriteLine("\t19. ");
+        Console.WriteLine("\t20. ");
+        Console.WriteLine("\t21. ");
+        Console.WriteLine("\t22. ");
+        Console.WriteLine("\t23. ");
+        Console.WriteLine("\t24. ");
+        Console.WriteLine("\t25. ");
 
         Console.WriteLine();
 
         Console.Write("\t\t¿Que ejercicio desea ejecutar? ");
 
-        opcion = Int32.Parse(Console.ReadLine()!);
+        int opcion = Int32.Parse(Console.ReadLine()!);
 
         Console.Clear();
 
@@ -200,6 +202,34 @@ internal class Curso_C
 
                 break;
 
+            case 14:
+
+                /* Las clases anonimas, tienen utilidad generalmente cuando se hace una peticion a una BBDD.
+                El compilador distingue cuando una variable es de una clase u otra teniendo en cuenta lo siguiente: Numero, tipo y orden de los campos.
+                Requisitos clases anonimas:
+                    Solo pueden contener campos publicos
+                    Todos los campos deben estar iniciados
+                    Los campos no pueden ser static
+                    No se pueden definir metodos */
+                var miVariable = new { Nombre = "Jose", Edad = 19 };
+                Console.WriteLine($"Nombre : {miVariable.Nombre} / Edad : {miVariable.Edad}");
+
+                var miOtraVariable = new { Nombre = "Felipe", Edad = 20 };
+                Console.WriteLine($"Nombre : {miOtraVariable.Nombre} / Edad : {miOtraVariable.Edad}");
+
+                break;
+
+            case 15:
+                
+                matricesArrays arrays = new matricesArrays();
+                int[] legajos = new int[4];
+
+                arrays.cargarArray(legajos);
+                arrays.mostrarFor(legajos);
+                arrays.mostrarForEach(legajos);
+                arrays.listarEmpleados();
+
+                break;
         }
 
     }

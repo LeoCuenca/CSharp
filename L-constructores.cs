@@ -18,7 +18,7 @@ public class auto
         ancho = 3.2;
         tapiceria = "Tela";
     }
-
+    
     //Sobrecarga de constructor
     public auto(double largoAuto, double anchoAuto)
     {
