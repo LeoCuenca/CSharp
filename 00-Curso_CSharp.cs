@@ -25,7 +25,7 @@ internal class Curso_C
         Console.WriteLine("\t13. Variable Static / Metodo Static");
         Console.WriteLine("\t14. Clases Anonimas");
         Console.WriteLine("\t15. Arrays");
-        Console.WriteLine("\t16. ");
+        Console.WriteLine("\t16. Herencia");
         Console.WriteLine("\t17. ");
         Console.WriteLine("\t18. ");
         Console.WriteLine("\t19. ");
@@ -228,6 +228,33 @@ internal class Curso_C
                 arrays.mostrarFor(legajos);
                 arrays.mostrarForEach(legajos);
                 arrays.listarEmpleados();
+
+                break;
+
+            case 16:
+
+                Herencia herencia = new Herencia();
+                herencia.ejecutarHerenciaPolimorfismo();
+
+                break;
+
+            case 17:
+
+                //Al crear un nuevo objeto de tipo 'avion', automaticamente el compilador llama al constructor de este, el cual a su vez ejecuta metodos que hereda de 'vehiculos'
+                Console.WriteLine("\n\tCREACION DE UN OBJETO DE TIPO AVION");
+                avion F22Raptor = new avion();
+                Console.WriteLine("\n\tCREACION DE UN OBJETO DE TIPO COCHE");
+                //Al crear un nuevo objeto de tipo 'coche', automaticamente el compilador llama al constructor de este, el cual a su vez ejecuta metodos que hereda de 'vehiculos'
+                coche NSkyline = new coche();
+
+                Console.WriteLine();
+                Console.WriteLine("\tPOLIMORFISMO - UN OBJETO DE TIPO VEHICULO COMPORTANDOSE COMO AVION PRIMERO Y LUEGO COMO COCHE");
+                vehiculo miVehiculo = new vehiculo();
+                miVehiculo = F22Raptor;
+                miVehiculo.conducir();
+
+                miVehiculo = NSkyline;
+                miVehiculo.conducir();
 
                 break;
         }

@@ -9,7 +9,7 @@ public class bloqueFinally
 		{
 			string linea;
 			int contador = 0;
-			string path = @"C:\\Users\\iSkyline\\Escritorio\\Curso C#\0-bloqueFinally.txt";
+			string path = @"C:\\Users\\iSkyline\\Escritorio\\Curso C#\000-bloqueFinally.txt";
 
 			archivo = new StreamReader(path);
 
