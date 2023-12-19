@@ -35,7 +35,7 @@ public class Herencia
         }
 
         Console.WriteLine("\n\tMostrandolo con bucle FOR");
-        for ( int i = 0; i < 3; i++ )   
+        for (int i = 0; i < 3; i++)
         {
             //almacenAnimales se esta comportando en la primera ocasion como un mamifero, en la segunda como humano y en la ultima como gorila. A esto se lo conoce como POLIMORFISMO
             almacenAnimales[i].pensar();
@@ -50,25 +50,57 @@ public class Herencia
         //Hacemos lo mismo con el otro metodo ambiguo, y de esta forma podemos acceder a los metodos private de cada una de las INTERFACE.
         ISaltoConPatas ISalto = miCaballo;
 
-        Console.WriteLine($"Mi caballo tiene {IPatas.NumeroPatas()} patas y salta solo con {ISalto.NumeroPatas()}");   
+        Console.WriteLine($"Mi caballo tiene {IPatas.NumeroPatas()} patas y salta solo con {ISalto.NumeroPatas()}");
+
+        Lagartija Juancho = new Lagartija("Juancho");
+        //Este metodo es heredado de la clase 'Mamiferos', que a su vez lo ha heredado de la clase 'Animales'
+        Juancho.respirar();
+        //La clase 'Animales' hace que la clase 'Lagartija' herede el metodo 'getNombre()', pero en la clase 'Lagartija' se sobreescribe (mediante la instruccion OVERRIDE) por otro metodo de igual nombre, que es mas propio de la clase 'Lagartija'
+        Juancho.getNombre();
+
+        //De manera homologa al objeto Juancho.
+        Humano Juan = new Humano("Juan");
+        Juan.respirar();
+        Juan.getNombre();
 
     }
 
-    public class Mamiferos
+    //Declaracion de una clase abstracta, es la clase que menos especifica es, generalmente la que esta en la cuspide.
+    public abstract class Animales
+    {
+        public void respirar() => Console.WriteLine("Soy capaz de respirar");
+
+        //Esto obliga a que aquellas futuras clases que hereden de la clase 'Animales', esten obligadas a que desarrollen el metodo 'getNombre()' segun sus necesidades.
+        public abstract void getNombre();
+    }
+
+    public class Lagartija : Animales
+    {
+        //Constructor
+        public Lagartija(string nombreReptil) => this.nombreReptil = nombreReptil;
+        
+        public override void getNombre() => Console.WriteLine($"El nombre del reptil es : {nombreReptil}");
+
+        private string nombreReptil;
+    }
+
+    public class Mamiferos:Animales
     {
         private string nombreSerVivo;
 
         public Mamiferos(string nombre) => nombreSerVivo = nombre;
 
         //PROTECTED permite que el metodo sea accesible desde la propia clase y de todas aquellas clases que hereden de esta, pero de ninguna otra mas.
-        protected void respirar() => Console.WriteLine("Soy capaz de respirar");
+        //protected void respirar() => Console.WriteLine("Soy capaz de respirar");
+        //Comento el metodo por ser heredado de la clase abstracta, no lo elimino porque da pautas de la definicion del modificador de acceso 'protected'
 
         //Para poder usar el override y asi SOBREESCRIBIR O MODIFICAR una clase heredada, debemos asignar al metodo en cuestion la palabra reservada virtual, sino, marcara un error en la clase que herede del padre.
         public virtual void pensar() => Console.WriteLine("Soy capaz de pensar instintivamente");
 
         public void cuidarCrias() => Console.WriteLine("Cuido de mis crias");
 
-        public void getNombre() => Console.WriteLine($"El nombre del ser vivo es : {nombreSerVivo}");
+        //Con esta instruccion sobreescribimos el metodo 'getNombre()' heredado de la clase abstracta 'Animales'
+        public override void getNombre() => Console.WriteLine($"El nombre del mamifero es : {nombreSerVivo}");
 
     }
 

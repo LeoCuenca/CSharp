@@ -22,11 +22,11 @@ internal class Curso_C
         Console.WriteLine("\t10. Clases / Instancias / Campo de Clases");
         Console.WriteLine("\t11. Encapsulamiento / Ambito");
         Console.WriteLine("\t12. Setters y Getters");
-        Console.WriteLine("\t13. Variable Static / Metodo Static");
-        Console.WriteLine("\t14. Clases Anonimas");
-        Console.WriteLine("\t15. Arrays");
-        Console.WriteLine("\t16. Herencia");
-        Console.WriteLine("\t17. ");
+        Console.WriteLine("\t13. Variable Static | Metodo Static");
+        Console.WriteLine("\t14. Matrices | Arrays | Clases Anonimas");
+        Console.WriteLine("\t15. Herencia | Polimorfismo | Interface | Clases Abstractas");
+        Console.WriteLine("\t16. Ejercicio Practico [Test]");
+        Console.WriteLine("\t17. Programa de Avisos de Infracciones [Interrface]");
         Console.WriteLine("\t18. ");
         Console.WriteLine("\t19. ");
         Console.WriteLine("\t20. ");
@@ -217,10 +217,6 @@ internal class Curso_C
                 var miOtraVariable = new { Nombre = "Felipe", Edad = 20 };
                 Console.WriteLine($"Nombre : {miOtraVariable.Nombre} / Edad : {miOtraVariable.Edad}");
 
-                break;
-
-            case 15:
-                
                 matricesArrays arrays = new matricesArrays();
                 int[] legajos = new int[4];
 
@@ -231,14 +227,14 @@ internal class Curso_C
 
                 break;
 
-            case 16:
+            case 15:
 
                 Herencia herencia = new Herencia();
                 herencia.ejecutarHerenciaPolimorfismo();
 
                 break;
 
-            case 17:
+            case 16:
 
                 //Al crear un nuevo objeto de tipo 'avion', automaticamente el compilador llama al constructor de este, el cual a su vez ejecuta metodos que hereda de 'vehiculos'
                 Console.WriteLine("\n\tCREACION DE UN OBJETO DE TIPO AVION");
@@ -255,6 +251,19 @@ internal class Curso_C
 
                 miVehiculo = NSkyline;
                 miVehiculo.conducir();
+
+                break;
+
+            case 17:
+
+                avisoInterface av1 = new avisoInterface();
+                av1.ejecutar17();
+
+                break;
+
+            case 18:
+
+
 
                 break;
         }
