@@ -1,5 +1,8 @@
 ﻿using System;
 //NO SE ADMITE LA HERENCIA MULTIPLE EN C#. Solamente se puede heredar de una clase.
+//La instruccion SEALED impide la herencia de clases y la sobreescritura de metodos.
+
+
 public class Herencia
 {
     public void ejecutarHerenciaPolimorfismo()
@@ -164,7 +167,19 @@ public class Herencia
         }
         //La advertencia surge dado que la clase 'humano' hereda de 'mamiferos' un metodo 'pensar()'. El metodo de la clase 'humano' OCULTA al heredado, por lo que se ejecuta 'pensar()' de la clase 'humano'
         //Esto no ocurriria si sobrecargo al metodo pensar(), es decir, si hago que le pase otra cantidad de parametros o distintos tipos de parametros.
-        public void pensar() => Console.WriteLine("Soy capaz de pensar");
+        //Este metodo con SEALED no se puede sobreescribir porque esta sellado
+        public sealed override void pensar() => Console.WriteLine("Soy capaz de pensar");
+
+    }
+
+    public class Adolescente : Humano
+    {
+        public Adolescente(string nombreAdolescente) : base(nombreAdolescente)
+        {
+
+        }
+
+        public override void pensar() => Console.WriteLine("Las hormonas no me dejan pensar claramente");
 
     }
 
@@ -182,6 +197,22 @@ public class Herencia
         public int NumeroPatas() => 2;
 
     }
+
+    public class Chimpance : Gorila
+    {
+        public Chimpance(string nombreChimpance) : base(nombreChimpance)
+        {
+
+        }
+
+
+
+
+    }
+
+
+
+
 }
 
 
