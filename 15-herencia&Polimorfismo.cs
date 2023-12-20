@@ -167,8 +167,8 @@ public class Herencia
         }
         //La advertencia surge dado que la clase 'humano' hereda de 'mamiferos' un metodo 'pensar()'. El metodo de la clase 'humano' OCULTA al heredado, por lo que se ejecuta 'pensar()' de la clase 'humano'
         //Esto no ocurriria si sobrecargo al metodo pensar(), es decir, si hago que le pase otra cantidad de parametros o distintos tipos de parametros.
-        //Este metodo con SEALED no se puede sobreescribir porque esta sellado
-        public sealed override void pensar() => Console.WriteLine("Soy capaz de pensar");
+        //Este metodo con SEALED no se puede sobreescribir porque esta sellado, comento la instruccion para que no genere error con 'Adolescente'
+        public /*sealed*/ override void pensar() => Console.WriteLine("Soy capaz de pensar");
 
     }
 

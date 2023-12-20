@@ -263,7 +263,8 @@ internal class Curso_C
 
             case 18:
 
-
+                Properties propiedades = new Properties();
+                propiedades.ejecutar();
 
                 break;
         }
