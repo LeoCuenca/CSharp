@@ -276,7 +276,8 @@ namespace Curso_CSharp
 
                 case 20:
 
-                    Enum asd = new Enum();
+                    Enum tiposEnumerados = new Enum();
+                    tiposEnumerados.ejecutar();
 
 
                     break;
