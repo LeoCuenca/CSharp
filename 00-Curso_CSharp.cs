@@ -26,9 +26,9 @@ internal class Curso_C
         Console.WriteLine("\t14. Matrices | Arrays | Clases Anonimas");
         Console.WriteLine("\t15. Herencia | Polimorfismo | Interface | Clases Abstractas");
         Console.WriteLine("\t16. Ejercicio Practico [Test]");
-        Console.WriteLine("\t17. Programa de Avisos de Infracciones [Interrface]");
-        Console.WriteLine("\t18. ");
-        Console.WriteLine("\t19. ");
+        Console.WriteLine("\t17. Programa de Avisos de Infracciones [Interfaces]");
+        Console.WriteLine("\t18. Propiedades | Properties");
+        Console.WriteLine("\t19. Estructuras | Structs");
         Console.WriteLine("\t20. ");
         Console.WriteLine("\t21. ");
         Console.WriteLine("\t22. ");
@@ -265,6 +265,13 @@ internal class Curso_C
 
                 Properties propiedades = new Properties();
                 propiedades.ejecutar();
+
+                break;
+
+            case 19:
+
+                Estructuras estructuras = new Estructuras();
+                estructuras.ejecutar();
 
                 break;
         }
