@@ -279,12 +279,12 @@ namespace Curso_CSharp
                     Enum tiposEnumerados = new Enum();
                     tiposEnumerados.ejecutar();
 
-
                     break;
 
                 case 21:
 
-
+                    Destructores destructores = new Destructores();
+                    destructores.ejecutar();
 
                     break;
 
