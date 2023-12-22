@@ -1,44 +1,47 @@
 ﻿using System;
 
-public class vehiculo
+namespace Ejercicio
 {
-
-    public vehiculo()
+    public class vehiculo
     {
-        
+
+        public vehiculo()
+        {
+
+        }
+
+        public void arrancarMotor() => Console.WriteLine("\tArrancando el motor");
+        public void pararMotor() => Console.WriteLine("\tParando el motor");
+        public virtual void conducir() => Console.WriteLine("\tConduciendo el vehiculo");
+
     }
 
-    public void arrancarMotor() => Console.WriteLine("\tArrancando el motor");
-    public void pararMotor() => Console.WriteLine("\tParando el motor");
-    public virtual void conducir() => Console.WriteLine("\tConduciendo el vehiculo");
-
-}
-
-public class avion : vehiculo
-{
-    public avion() : base()
-    { 
-        arrancarMotor();
-        pararMotor();
-        conducir();
-    }
-
-    public override void conducir() => Console.WriteLine("\tEstoy conduciendo un avion");
-
-}
-
-public class coche : vehiculo
-{
-
-    public coche() : base()
+    public class avion : vehiculo
     {
-        arrancarMotor();
-        pararMotor();
-        conducir();
+        public avion() : base()
+        {
+            arrancarMotor();
+            pararMotor();
+            conducir();
+        }
+
+        public override void conducir() => Console.WriteLine("\tEstoy conduciendo un avion");
+
     }
 
-    public override void conducir() => Console.WriteLine("\tEstoy conduciendo un coche");
+    public class coche : vehiculo
+    {
 
+        public coche() : base()
+        {
+            arrancarMotor();
+            pararMotor();
+            conducir();
+        }
+
+        public override void conducir() => Console.WriteLine("\tEstoy conduciendo un coche");
+
+    }
 }
 
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using Ejercicio;
 
 namespace Curso_CSharp
 {
@@ -276,7 +277,7 @@ namespace Curso_CSharp
 
                 case 20:
 
-                    Enum tiposEnumerados = new Enum();
+                    TiposEnum tiposEnumerados = new TiposEnum();
                     tiposEnumerados.ejecutar();
 
                     break;
@@ -290,7 +291,8 @@ namespace Curso_CSharp
 
                 case 22:
 
-
+                    Genericos genericos = new Genericos();
+                    genericos.ejecutar();
 
                     break;
 
