@@ -298,7 +298,19 @@ namespace Curso_CSharp
 
                 case 23:
 
+                    // Instancio el generico para objetos de tipo Secretaria
+                    AlmacenEmpleados<Secretaria> genericosRestricciones = new AlmacenEmpleados<Secretaria>(3);
 
+                    // Instancio y agrego los objetos Secretaria al array mediante el metodo perteneciente al generico 'agregar'
+                    genericosRestricciones.agregar(new Secretaria(1000));
+                    genericosRestricciones.agregar(new Secretaria(2000));
+                    genericosRestricciones.agregar(new Secretaria(3000));
+
+                    // Con esta linea 'capturo' la informacion de la instancia 'salarioSecretaria', dandole una posicion del array.
+                    Secretaria salarioSecretaria = genericosRestricciones.getEmpleado(1);
+                    // En esta linea invocamos al metodo getSalario de la instancia del objeto salarioSecretaria, creado en la linea anterior, para que devuelve el salario con el getter.
+                    // Hay que estar muy atento para estos temas ...
+                    Console.WriteLine(salarioSecretaria.getSalario());
 
                     break;
             }

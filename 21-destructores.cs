@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Ejercicio
 {
-    public class Destructores
+    class Destructores
     {
 
         public void ejecutar()
