@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ejercicio
+namespace Tema
 {
     //Deberia crear cada interface y class en ficheros diferentes .cs, haciendo uso del principio de modularizacion. Pero a efectos practicos del curso, cada class e interface estara en el mismo archivo .cs.
     public class avisoInterface

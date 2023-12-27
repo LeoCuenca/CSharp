@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ejercicio
+namespace Tema
 {
     /* ================================================================================================================= */
     //              CONSTRUCTORES / GETTERS / SETTERS / SOBRECARGA CONSTRUCTORES / USO DE THIS / PARTIAL CLASS

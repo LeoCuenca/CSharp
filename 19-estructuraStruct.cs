@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ejercicio
+namespace Tema
 {
     //Las estructuras, como bien se sabe ya desde C/C++, trabajan en la pila (Stack), mientras que las clases trabajan en el HEAP. Los cambios se reflejan por refencia en una clase, cosa que no pasa en las estructuras, ya 
     //que se crea una copia de la estructura en la pila. Es por eso que los cambios no se ven reflejados, solo muestra los valores pasados por parametro.

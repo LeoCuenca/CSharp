@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ejercicio
+namespace Tema
 {
     // Declaracion de una clase con restriccion
     public class AlmacenEmpleados<T> where T: IParaEmpleados

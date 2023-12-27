@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ejercicio
+namespace Tema
 {
     public class numAleaExcepcion
     {

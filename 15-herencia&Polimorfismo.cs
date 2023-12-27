@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ejercicio
+namespace Tema
 {
     //NO SE ADMITE LA HERENCIA MULTIPLE EN C#. Solamente se puede heredar de una clase.
     //La instruccion SEALED impide la herencia de clases y la sobreescritura de metodos.

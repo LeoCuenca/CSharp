@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Ejercicio
+namespace Tema
 {
 
     class Colecciones

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ejercicio
+namespace Tema
 {
     // El ambito de las variables determinan desde donde pueden ser visibles y utilizadas
     public class alcanceVariables

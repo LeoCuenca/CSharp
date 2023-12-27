@@ -1,5 +1,5 @@
 ﻿using System;
-using Ejercicio;
+using Tema;
 
 namespace Curso_CSharp
 {
@@ -37,6 +37,17 @@ namespace Curso_CSharp
             Console.WriteLine("\t22. Genericos");
             Console.WriteLine("\t23. Genericos con Restricciones");
             Console.WriteLine("\t24. Colecciones -> Listas | Listas Enlazadas | Queue | ");
+            Console.WriteLine("\t25. Delegados | Predicados | Lambdas");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t25. ");
             Console.WriteLine("\t25. ");
 
             Console.Write(" \n\t\t¿Que ejercicio desea ejecutar? ");
@@ -328,6 +339,28 @@ namespace Curso_CSharp
 
 
                     break;
+
+                case 25:
+
+                    DelegadosPredicados delprelam = new DelegadosPredicados();
+                    delprelam.delegadosPredicadosObjetos();
+
+                    break;
+
+                case 26:
+
+                    expresionesLambda lambda = new expresionesLambda();
+
+                    //lambda.lambdaPrimitivos();
+                    lambda.lambdaObjetos();
+
+
+
+                    break;
+
+
+
+
             }
         }
     }
