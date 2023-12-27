@@ -33,10 +33,10 @@ namespace Curso_CSharp
             Console.WriteLine("\t18. Propiedades | Properties");
             Console.WriteLine("\t19. Estructuras | Structs");
             Console.WriteLine("\t20. Enum | Tipos enumerados");
-            Console.WriteLine("\t21. ");
-            Console.WriteLine("\t22. ");
-            Console.WriteLine("\t23. ");
-            Console.WriteLine("\t24. ");
+            Console.WriteLine("\t21. Destructores");
+            Console.WriteLine("\t22. Genericos");
+            Console.WriteLine("\t23. Genericos con Restricciones");
+            Console.WriteLine("\t24. Colecciones -> Listas | Listas Enlazadas | Queue | ");
             Console.WriteLine("\t25. ");
 
             Console.Write(" \n\t\t¿Que ejercicio desea ejecutar? ");
@@ -311,6 +311,21 @@ namespace Curso_CSharp
                     // En esta linea invocamos al metodo getSalario de la instancia del objeto salarioSecretaria, creado en la linea anterior, para que devuelve el salario con el getter.
                     // Hay que estar muy atento para estos temas ...
                     Console.WriteLine(salarioSecretaria.getSalario());
+
+                    break;
+
+                case 24:
+
+                    Colecciones colecciones = new Colecciones();
+                    //Console.WriteLine("Listas");
+                    //colecciones.listas();
+                    //Console.WriteLine("Listas Enlazadas");
+                    //colecciones.listasEnlazadas();
+                    //Console.WriteLine("Queue | Colas");
+                    //colecciones.queue();
+                    Console.WriteLine("Diccionario");
+                    colecciones.dictionary();
+
 
                     break;
             }

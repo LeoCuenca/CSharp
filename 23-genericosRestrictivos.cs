@@ -2,13 +2,6 @@
 
 namespace Ejercicio
 {
-    public class GenericosRestricciones
-    {
-
-
-
-    }
-
     // Declaracion de una clase con restriccion
     public class AlmacenEmpleados<T> where T: IParaEmpleados
     {
@@ -29,7 +22,6 @@ namespace Ejercicio
         public T getEmpleado(int i) => datosEmpleado[i];
 
     }
-
 
     public class Director : IParaEmpleados
     {
