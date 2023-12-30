@@ -1,0 +1,22 @@
+﻿<Window x:Class="Interfaces_Graficas.bindingINotifyPropertyChanged"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interfaces_Graficas"
+        mc:Ignorable="d"
+        Title="bindingINotifyPropertyChanged" Height="450" Width="800">
+    <StackPanel>
+        <!-- -->
+        <!--DATA BINDING-->
+        <!--<TextBox Width="100" Name="MiCuadro" Margin="160" Text="{Binding ElementName=MiSlider, Path=Value, Mode=TwoWay}"></TextBox>-->
+        <!--<Slider Width="350" Name="MiSlider" Minimum="0" Maximum="100" Value="25"></Slider>-->
+        <!-- INOTIFYPROPERTYCHANGED-->
+        <Label Content="Nombre"></Label>
+        <TextBox Width="100" Height="30" Text="{Binding Path=Nombre, Mode=TwoWay}"></TextBox>
+        <Label Content="Apellido"></Label>
+        <TextBox Width="100" Height="30" Text="{Binding Path=Apellido, Mode=TwoWay}"></TextBox>
+        <Label Content="Nombre Completo"></Label>
+        <TextBox Width="100" Height="30" Text="{Binding Path=NombreCompleto, Mode=TwoWay}"></TextBox>
+    </StackPanel>
+</Window>

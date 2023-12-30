@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Interfaces_Graficas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Primer Interfaz" Height="450" Width="800">
 
+    <Grid>
+        <Button Name="Lala" Height="25" Width="150" Margin="5" Click="ListBox" FontSize="10">List Box</Button>
+        <Button Height="25" Width="150" Margin="5" Click="CmbBox_ChkBox"  FontSize="10">ComboBox | CheckBox</Button>
     </Grid>
+
+
 </Window>
