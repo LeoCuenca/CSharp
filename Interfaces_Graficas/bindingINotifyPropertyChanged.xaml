@@ -5,13 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Interfaces_Graficas"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="bindingINotifyPropertyChanged" Height="450" Width="800">
     <StackPanel>
-        <!-- -->
-        <!--DATA BINDING-->
-        <!--<TextBox Width="100" Name="MiCuadro" Margin="160" Text="{Binding ElementName=MiSlider, Path=Value, Mode=TwoWay}"></TextBox>-->
-        <!--<Slider Width="350" Name="MiSlider" Minimum="0" Maximum="100" Value="25"></Slider>-->
-        <!-- INOTIFYPROPERTYCHANGED-->
         <Label Content="Nombre"></Label>
         <TextBox Width="100" Height="30" Text="{Binding Path=Nombre, Mode=TwoWay}"></TextBox>
         <Label Content="Apellido"></Label>

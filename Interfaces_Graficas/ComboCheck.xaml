@@ -1,0 +1,42 @@
+﻿<Window x:Class="Interfaces_Graficas.ComboCheck"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interfaces_Graficas"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="ComboBox | CheckBOx" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <ComboBox Name="Capitales">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding NombreCapital}" FontSize="16"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <Label Content="Paises" HorizontalAlignment="Center" FontSize="16" FontWeight="ExtraBold"></Label>
+            <CheckBox Name="TodasCapitales" IsThreeState="True" Content="Agregar Todas" Checked="TodasCapitales_Checked" Unchecked="TodasCapitales_Unchecked" ></CheckBox>
+            <StackPanel Margin="15">
+                <CheckBox Name="Madrid" Content="Madrid" Checked="IndividualChecked" Unchecked="IndividualUnchecked"></CheckBox>
+                <CheckBox Name="Bogota" Content="Bogota" Checked="IndividualChecked" Unchecked="IndividualUnchecked"></CheckBox>
+                <CheckBox Name="Lima" Content="Lima" Checked="IndividualChecked" Unchecked="IndividualUnchecked"></CheckBox>
+                <CheckBox Name="DF" Content="DF" Checked="IndividualChecked" Unchecked="IndividualUnchecked"></CheckBox>
+                <CheckBox Name="Santiago" Content="Santiago" Checked="IndividualChecked" Unchecked="IndividualUnchecked"></CheckBox>
+            </StackPanel>
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>

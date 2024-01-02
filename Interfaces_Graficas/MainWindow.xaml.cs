@@ -26,9 +26,12 @@ namespace Interfaces_Graficas
 
         //public static readonly DependencyProperty miDependencyProperty = DependencyProperty.Register("MiProperty", typeof(int), typeof(MainWindow), new PropertyMetadata(0));
         // ----------------------------------------------------------------------------------------------
+
         public MainWindow()
         {
+            
             InitializeComponent();
+            
 
         }
 
@@ -36,11 +39,25 @@ namespace Interfaces_Graficas
         {
             Window1 ventanaListBox = new Window1();
             ventanaListBox.Show();
+            
         }
 
-        private void CmbBox_ChkBox(object sender, RoutedEventArgs e)
+        private void INotifyPropertyChanged(object sender, RoutedEventArgs e)
         {
+            bindingINotifyPropertyChanged ventanaINPC = new bindingINotifyPropertyChanged();
+            ventanaINPC.Show();
+        }
 
+        private void ComboCheck(object sender, RoutedEventArgs e)
+        {
+            ComboCheck ventanaComboCheck = new ComboCheck();
+            ventanaComboCheck.Show();
+        }
+
+        private void RadioButton(object sender, RoutedEventArgs e)
+        {
+            RadioButton ventanaRadioButton = new RadioButton();
+            ventanaRadioButton.Show();
         }
     }
 }

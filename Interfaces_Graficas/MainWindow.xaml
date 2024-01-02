@@ -5,12 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Interfaces_Graficas"
         mc:Ignorable="d"
-        Title="Primer Interfaz" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Primer Interfaz" Height="600" Width="1000">
 
     <Grid>
-        <Button Name="Lala" Height="25" Width="150" Margin="5" Click="ListBox" FontSize="10">List Box</Button>
-        <Button Height="25" Width="150" Margin="5" Click="CmbBox_ChkBox"  FontSize="10">ComboBox | CheckBox</Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition> 
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Verdana">Menu de temas de interfaces graficas</Label>
+        <Button Content="List Box" Margin="20 15" Click="ListBox" FontSize="12" Grid.Column="1" Grid.Row="1"></Button>
+        <Button Content="INotifyPropertyChanged" Margin="20 15" FontSize="12" Grid.Column="0" Grid.Row="1" Click="INotifyPropertyChanged"></Button>
+        <Button Content="Combo Box &#x0a; Check Box" Margin="20 15" FontSize="12" Grid.Column="2" Grid.Row="1" Click="ComboCheck"></Button>
+        <Button Content="Radio Button" Margin="20 15" FontSize="12" Grid.Column="3" Grid.Row="1" Click="RadioButton"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="0" Grid.Row="2"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="1" Grid.Row="2"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="2" Grid.Row="2"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="3" Grid.Row="2"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="0" Grid.Row="3"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="1" Grid.Row="3"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="2" Grid.Row="3"></Button>
+        <Button Content="Proximamente" Margin="20 15" FontSize="12" Grid.Column="3" Grid.Row="3"></Button>
+        
     </Grid>
 
-
+ 
 </Window>
