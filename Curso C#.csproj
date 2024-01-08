@@ -16,4 +16,13 @@
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="BBDD-SQLServer\**" />
+    <Compile Remove="Interfaces_Graficas\**" />
+    <EmbeddedResource Remove="BBDD-SQLServer\**" />
+    <EmbeddedResource Remove="Interfaces_Graficas\**" />
+    <None Remove="BBDD-SQLServer\**" />
+    <None Remove="Interfaces_Graficas\**" />
+  </ItemGroup>
+
 </Project>

@@ -38,11 +38,11 @@ namespace Curso_CSharp
             Console.WriteLine("\t23. Genericos con Restricciones");
             Console.WriteLine("\t24. Colecciones -> Listas | Listas Enlazadas | Queue | ");
             Console.WriteLine("\t25. Delegados | Predicados | Lambdas");
-            Console.WriteLine("\t25. ");
-            Console.WriteLine("\t25. ");
-            Console.WriteLine("\t25. ");
-            Console.WriteLine("\t25. ");
-            Console.WriteLine("\t25. ");
+            Console.WriteLine("\t26. Expresiones Lambda");
+            Console.WriteLine("\t27. Expresiones Regulares");
+            Console.WriteLine("\t28. Languaje Integrated Query | LINQ");
+            Console.WriteLine("\t29. ");
+            Console.WriteLine("\t30. ");
             Console.WriteLine("\t25. ");
             Console.WriteLine("\t25. ");
             Console.WriteLine("\t25. ");
@@ -366,6 +366,10 @@ namespace Curso_CSharp
                     break;
 
                 case 28:
+
+                    LINQ linq = new LINQ();
+                    linq.linqObjetos();
+
                     break;
                 case 29:
                     break;
