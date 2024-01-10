@@ -41,8 +41,8 @@ namespace Curso_CSharp
             Console.WriteLine("\t26. Expresiones Lambda");
             Console.WriteLine("\t27. Expresiones Regulares");
             Console.WriteLine("\t28. Languaje Integrated Query | LINQ");
-            Console.WriteLine("\t29. ");
-            Console.WriteLine("\t30. ");
+            Console.WriteLine("\t29. Threads");
+            Console.WriteLine("\t30. Threads | Ejercicio Banco");
             Console.WriteLine("\t25. ");
             Console.WriteLine("\t25. ");
             Console.WriteLine("\t25. ");
@@ -84,19 +84,19 @@ namespace Curso_CSharp
 
                     // En el caso de sumaNumeros(), este recibe como argumentos 2 numeros enteros, los cuales son solicitados al usuario mediante consola, convirtiendo estos a enteros, utilizando el metodo .Parse().
 
-                    Console.Write("     Ingrese el primer numero : ");
+                    Console.Write("Ingrese el primer numero : ");
                     int num1 = int.Parse(Console.ReadLine()!);
 
-                    Console.Write("     Ingrese el segundo numero : ");
+                    Console.Write("Ingrese el segundo numero : ");
                     int num2 = int.Parse(Console.ReadLine()!);
 
                     cuarto.sumaNumeros(num1, num2);
 
                     // El siguiente caso es con un retorno, el metodo va a recibir 2 argumentos y va a devolver un valor al MAIN.
 
-                    Console.WriteLine($"        La multiplicacion de estos numeros es : {cuarto.multiplicacionNumeros(num1, num2)}");
-                    Console.WriteLine($"        La division de estos numeros es : {cuarto.divisionNumeros(num1, num2)}");
-                    Console.WriteLine($"        La division de estos numeros con operador flecha es : {cuarto.divNumFlecha(num1, num2)}");
+                    Console.WriteLine($"La multiplicacion de estos numeros es : {cuarto.multiplicacionNumeros(num1, num2)}");
+                    Console.WriteLine($"La division de estos numeros es : {cuarto.divisionNumeros(num1, num2)}");
+                    Console.WriteLine($"La division de estos numeros con operador flecha es : {cuarto.divNumFlecha(num1, num2)}");
 
                     break;
 
@@ -372,24 +372,51 @@ namespace Curso_CSharp
 
                     break;
                 case 29:
+
+                    Threads threads = new Threads();
+                    threads.thread1();
                     break;
+
                 case 30:
+
+                    Banco banco = new Banco();
+                    banco.ProblemaBancario();
+
                     break;
                 case 31:
+
+                    TaskCompSource TCS = new TaskCompSource();
+                    TCS.ejecutar();
+
                     break;
                 case 32:
+
+                    ThreadPools TP = new ThreadPools();
+                    TP.ejecutar();
+
                     break;
                 case 33:
+
+                    Tasks TSK = new Tasks();
+                    TSK.ejecutar();
+
                     break;
                 case 34:
+
+                    TasksWait TSKWait = new TasksWait();
+                    TSKWait.ejecutar();
+
                     break;
                 case 35:
+
+                    ParallelClass PC = new ParallelClass();
+                    PC.ejecutar();
+
                     break;
                 case 36:
-                    break;
-                case 37:
-                    break;
-                case 38:
+
+                    CancelationTask CT = new CancelationTask();
+                    CT.ejecutar();
                     break;
 
 

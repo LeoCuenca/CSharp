@@ -18,10 +18,13 @@
 
   <ItemGroup>
     <Compile Remove="BBDD-SQLServer\**" />
+    <Compile Remove="CRUD_LINQ\**" />
     <Compile Remove="Interfaces_Graficas\**" />
     <EmbeddedResource Remove="BBDD-SQLServer\**" />
+    <EmbeddedResource Remove="CRUD_LINQ\**" />
     <EmbeddedResource Remove="Interfaces_Graficas\**" />
     <None Remove="BBDD-SQLServer\**" />
+    <None Remove="CRUD_LINQ\**" />
     <None Remove="Interfaces_Graficas\**" />
   </ItemGroup>
 
